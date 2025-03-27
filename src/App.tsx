@@ -1,13 +1,10 @@
-import Loading from "./components/shared/loading/loading"
-
-
-
+import './App.scss'
 function App() {
 
 
   return (
-      <div>
-   <Loading/>
+    <div>
+      <h1>nmlml</h1>
     </div>
   )
 }
