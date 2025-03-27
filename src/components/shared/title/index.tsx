@@ -1,5 +1,5 @@
 import React from 'react'
-import {TitlePageProps} from './TitlePage'
+import {TitlePageProps} from './types'
 import './TitlePage.scss'
 
 
