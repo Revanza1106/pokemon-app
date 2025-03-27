@@ -1,3 +1,5 @@
+import Loading from "./components/shared/loading/loading"
+
 
 
 function App() {
@@ -5,7 +7,7 @@ function App() {
 
   return (
       <div>
-        <h2>dkldkllkd</h2>
+   <Loading/>
     </div>
   )
 }
