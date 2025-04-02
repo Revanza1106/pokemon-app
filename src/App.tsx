@@ -1,10 +1,11 @@
 import './App.scss'
+import Navbar from './components/navbar'
 function App() {
 
 
   return (
     <div>
-      <h1>nmlml</h1>
+      <Navbar/>
     </div>
   )
 }
