@@ -1,6 +1,6 @@
 import React from 'react'
 import {TitlePageProps} from './types'
-import './TitlePage.scss'
+import './styles.scss'
 
 
 const TitlePage: React.FC<TitlePageProps>= ({title}) => {

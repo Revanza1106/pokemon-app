@@ -1,0 +1,78 @@
+.pokemon-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  
+    // Desktop - 3 cards
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    // Tablet - 2 cards
+    @media (max-width: 1023px) and (min-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    // Mobile - 1 card
+    @media (max-width: 599px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .pokemon-card {
+    background: white;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-0.25rem);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+  
+    .card-image {
+      position: relative;
+      background: linear-gradient(to bottom, #f5f7fa 0%, #e4e8eb 100%);
+      padding: 1.5rem;
+      text-align: center;
+      
+      .pokemon-sprite {
+        width: 100%;
+        height: auto;
+        max-height: 10rem;
+        object-fit: contain;
+        filter: drop-shadow(0 0.25rem 0.5rem rgba(0, 0, 0, 0.2));
+        transition: transform 0.3s ease;
+      }
+      
+      .pokemon-id {
+        position: absolute;
+        top: 0.75rem;
+        right: 0.75rem;
+        background: rgba(0, 0, 0, 0.25);
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 1rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        backdrop-filter: blur(4px);
+      }
+    }
+  
+    .card-content {
+      padding: 1.25rem;
+      text-align: center;
+      
+      .pokemon-title {
+        margin: 0;
+        color: #2c3e50;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+    }
+  }
