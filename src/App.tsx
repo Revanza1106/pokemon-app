@@ -1,5 +1,6 @@
 import './App.scss'
 import Navbar from './components/navbar'
+import PokemonDetail from './pages/DetailPage'
 import Home from './pages/Home'
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div>
       <Navbar/>
       <Home/>
+      <PokemonDetail/>
     </div>
   )
 }

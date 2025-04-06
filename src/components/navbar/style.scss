@@ -1,9 +1,4 @@
 
-html, body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
 .navbar-container {
   background: linear-gradient(135deg, #2c3e50 0%, #1a1a1a 100%);
   padding: 1rem 2rem; 
@@ -83,7 +78,8 @@ html, body {
   }
 }
 
-@media (max-width: 48rem) { 
+
+@media (max-width: 100rem) { 
   .navbar-container {
     padding: 0.1rem; 
 
