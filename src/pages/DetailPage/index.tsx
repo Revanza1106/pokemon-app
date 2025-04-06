@@ -25,7 +25,6 @@ const PokemonDetail = () => {
                     </div>
   
                 </div>
-gi
                 {/* right column */}
                 <div className="info-section">
                     <div className="stats-container">
